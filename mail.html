@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contact Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> <!-- Or your theme’s CSS -->
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #e6e3e1;
+      font-family: 'Open Sans', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .contact-container {
+      width: 100%;
+      max-width: 350px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 0 30px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    form input,
+    form textarea {
+      width: 92%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 3px solid #bea08e;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+
+    form textarea {
+      resize: none;
+    }
+
+    .submit-button {
+      background-color: #d16526;
+      color: rgb(0, 0, 0);
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 40%;
+      border-radius: 6px;
+    }
+
+    .submit-button:hover {
+      background-color: #c28c5f;
+    }
+  </style>
+</head>
+<body>
+  <section id="contact" class="container">
+    <header>
+<div class="contact-container">
+  <h2>Contact Me</h2>
+  <p>Please complete the form below, and I will respond to your inquiry as soon as possible.</p>
+    <form method="POST" action="https://formspree.io/f/mrbkldzv">
+    <input type="hidden" name="_redirect" value="thank_you.html"/>
+
+    <input type="text" name="Name" placeholder="Your Full Name" required />
+    <input type="email" name="Email" placeholder="Your Email" required />
+    <textarea name="Message" placeholder="Message" rows="10" required style="font-family: Arial, sans-serif;" required></textarea>
+    <input type="submit" value="Send Message" class="submit-button" />
+  </form>
+</div>
+    </form>
+  </section>
+</body>
+</html>
